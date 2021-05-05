@@ -1,0 +1,11 @@
+{% extends 'home.html' %}
+{% block content %}
+<div class='col-sm-7'>
+<h4 class='text-center alert alert-primary'>Update This Student Data</h4>
+<form action="" method="POST">
+    {% csrf_token %}
+ {{form.as_p}}
+ <input type="submit" class='btn btn-primary'>
+</form>
+</div>
+{% endblock %}
